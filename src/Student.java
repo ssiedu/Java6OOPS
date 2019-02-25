@@ -33,9 +33,12 @@ public class Student {
         }
         System.out.println("___________________________________");
     }
-    public void setData(int a, String b, int c){
-        rno=a;
-        name=b;
+    public Student(int x, String y){
+        rno=x;
+        name=y;
+    }
+    public  Student(int a, String b, int c){
+        this(a,b);
         marks=c;
     }
 }
