@@ -12,13 +12,13 @@ public static void main(String[] args) {
     s4.printReportCard();
     s5.printReportCard();
     
-    Student.showTotal();
+    //Student.showTotal();
     
     //find out avg marks of s1, s5
-    //Student.showAvg(s1,s2);
-    //Student.showAvg(s1,s2,s3);
-    //Student.showAvg(s1,s2,s3,s4);
-    
+    Student.showAvg(s1,s2); //{s1,s2}
+    Student.showAvg(s1,s2,s3); //{s1,s2,s3}
+    Student.showAvg(s1,s2,s3,s4);
+    Student.showAvg(s1,s2,s3,s4,s5);
     
 }
     

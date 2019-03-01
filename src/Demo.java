@@ -2,72 +2,53 @@ public class Demo {
 
     private int x, y;
     
-    public Demo(int a, int b){
-        x=a; y=b;
+    public Demo(int x, int y){
+        this.x=x; 
+        this.y=y;
     }
+    
+    public boolean isEquals(Demo tmp){
+        
+       if(x==tmp.x && y==tmp.y){
+           return true;
+       }else{
+           return false;
+       }
+    }
+
     public void show(){
-        System.out.println(x+","+y);
+        System.out.println(x);
+        System.out.println(y);
+        System.out.println("__________");
     }
     
 public static void main(String args[]){
     
+    Demo d1=new Demo(10,20);
+    Demo d2=new Demo(30,40);
+    d1.show();
+    d2.show();
+    /*
     String s1=new String("indore");
     String s2=new String("indore");
-    String s3=s2;
     
-    System.out.println(s1);
-    System.out.println(s2);
     boolean b1=(s1==s2);
     System.out.println(b1);
-    
-    boolean b2=(s2==s3);
+   
+    boolean b2=s1.equals(s2);
     System.out.println(b2);
+    */
     
     /*
     Demo d1=new Demo(10,20);
     Demo d2=new Demo(10,20);
-    Demo d3=d1;
-    
-    boolean b1 = (d1==d2);
+   
+    boolean b1=(d1==d2);
     System.out.println(b1);
-    
-    boolean b2 = (d1==d3);
+   
+    boolean b2=d1.isEquals(d2);
     System.out.println(b2);
     */
-    
-    /*
-    Demo d1;
-    new Demo(10,20);
-    Demo d2=new Demo(30,40);
-    Demo d3=d2;
-    d1=d2;
-    d1.show();
-    d2.show();
-    d3.show();
-    System.out.println("_______________________");
-    
-    d3=new Demo(50,60);
-    d1.show();
-    d2.show();
-    d3.show();
-    System.out.println("_______________________");
-    d2=d3;
-    d1.show();
-    d2.show();
-    d3.show();
-    System.out.println("_______________________");
-    d1=new Demo(70,80);
-    d1.show();
-    d2.show();
-    d3.show();
-    System.out.println("_______________________");
-    d3=new Demo(90,100);
-    d1.show();
-    d2.show();
-    d3.show();
-    System.out.println("_______________________");
-    */
-    
 }
     
 }
